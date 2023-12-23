@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ReactDOM from 'react-dom/client';
 import './assets/style.css';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Registration from "./pages/auth/Registration";
 import Login from "./pages/auth/Login";
