@@ -14,7 +14,7 @@ function Home() {
                         Credisys
                     </div>
                     <div className="desc">
-                        Landlords and Property Managers incentivize on time payments with rent reporting rewards, while Renters are empowered with credit building opportunities.
+                        Landlords and Property Managers incentivize on time payments with rent reporting rewards, <br/> while Renters are empowered with credit building opportunities.
                     </div>
                 </div>
             </div>
