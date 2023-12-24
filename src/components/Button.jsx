@@ -1,5 +1,9 @@
 const Button = ({color, text}) => {
-    return <button style={{ backgroundColor: color}}>{text}</button>;
+    return (
+        <div className="clearfix">
+            <button style={{backgroundColor: color}} className={'btn text-white w-100 rounded-0'}>{text}</button>
+        </div>
+    );
 };
 
 

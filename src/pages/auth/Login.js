@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "../../components/Button";
 import {Link} from "react-router-dom";
+import Input from "../../components/Input";
 
 export default function Login() {
     const [email, setEmail] = useState('');
@@ -8,31 +9,48 @@ export default function Login() {
 
     const handleForm = (e) => {
         e.preventDefault();
+        console.log('Form submitted')
+
+        setEmail('');
+        setPassword('');
     }
     return (
         <>
-            <form onSubmit={handleForm}>
-                <div className="container">
-                    <h1>Login</h1>
-                    <p>Please login with your credentials.</p>
+            <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
+                <div className="bg-white p-3 rounded w-25">
+                    <h2>Login</h2>
+                    <form onSubmit={handleForm}>
 
-                    <label htmlFor="email"><b>Email</b></label>
-                    <input value={email} onChange={e => setEmail(e.target.value)} type="text" placeholder="Enter Email"
-                           name="email" required/>
+                        <Input
+                            value={email}
+                            label="Email"
+                            type="text"
+                            placeholder="Enter Email"
+                            name="email"
+                            className="form-control rounded-0"
+                            onChange={e => {
+                                setEmail(e.target.value)
+                            }}
+                        />
 
-                    <label htmlFor="password"><b>Password</b></label>
-                    <input value={password} onChange={e => setPassword(e.target.value)} type="password" id="password"
-                           placeholder="Enter Password" name="password" required/>
-
-                    <div className="clearfix">
-                        <Button text={'Login in'} color={'green'}/>
-                    </div>
-                    <p>Do not have an account? <Link style={{textDecoration: "none"}} to={'/register'}>Register
-                        Now!</Link></p>
-                    <p><Link to={'/'}>Go back to homePage</Link></p>
-
+                        <Input
+                            value={password}
+                            label="Password"
+                            type="password"
+                            placeholder="Enter Password"
+                            name="password"
+                            className="form-control rounded-0"
+                            onChange={e => {
+                                setPassword(e.target.value)
+                            }}
+                        />
+                        <Button text="Signup" color={'blue'}/>
+                        <p>Do not have an account? <Link style={{textDecoration: "none"}} to={'/register'}>Register</Link>
+                        </p>
+                        <p><Link style={{textDecoration: "none"}} to={'/'}>Go back to homePage</Link></p>
+                    </form>
                 </div>
-            </form>
+            </div>
         </>
     );
 }
