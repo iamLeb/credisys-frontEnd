@@ -45,8 +45,17 @@ export default function Login() {
                             }}
                         />
                         <Button text="Signup" color={'blue'}/>
-                        <p>Do not have an account? <Link style={{textDecoration: "none"}} to={'/register'}>Register</Link>
+                        <p>Do not have an account? <br/>
+                            <div className="row">
+                                <div className="col-md-6">
+                                    <Link style={{textDecoration: "none"}} to={'/property-management/register'}>Property Manager</Link>
+                                </div>
+                                <div className="col-md-6">
+                                    <Link style={{textDecoration: "none"}} to={'/tenant/register'}>Tenant</Link>
+                                </div>
+                            </div>
                         </p>
+
                         <p><Link style={{textDecoration: "none"}} to={'/'}>Go back to homePage</Link></p>
                     </form>
                 </div>
