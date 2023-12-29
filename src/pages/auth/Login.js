@@ -1,18 +1,33 @@
-import { useState } from "react";
+import {useState} from "react";
 import Button from "../../components/Button";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import Input from "../../components/Input";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    const navigate = useNavigate();
+
     const handleForm = (e) => {
         e.preventDefault();
-        console.log('Form submitted')
+        try {
+            axios.post('/api/login', {email, password})
+                .then(res => {
+                    const error = res.data.error;
+                    if (error) {
+                        toast.error(error);
+                    } else {
+                        console.log(res)
+                    }
+                })
+                .catch(err => console.log(err));
+        } catch (e) {
+            console.log(e);
+        }
 
-        setEmail('');
-        setPassword('');
     }
     return (
         <>

@@ -1,19 +1,34 @@
 import { useState } from "react";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import axios from "axios";
+import toast from 'react-hot-toast';
+
 
 export default function TenantRegistration() {
-    const [name, setName] = useState('');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [passwordConfirm, setPasswordConfirm] = useState('');
 
-    const handleForm = (e) => {
+    const navigate = useNavigate();
+
+    const handleForm = async e => {
         e.preventDefault();
+        const datas = {firstName, lastName, email, password, passwordConfirm}
 
-        axios.post('//localhost:3000/api/tenant', {firstName: name, lastName: email})
-            .then(response => console.log(response))
+        await axios.post('/api/tenant', datas)
+            .then(result => {
+                const error = result.data.error;
+                if (error) {
+                    toast.error(error);
+                } else {
+                    toast.success("Account created successfully!");
+                    navigate('/login');
+                }
+            })
             .catch(err => console.log(err));
     }
     return (
@@ -25,26 +40,26 @@ export default function TenantRegistration() {
                         <div className="row">
                             <div className="col-md-6">
                                 <Input
-                                    value={name}
+                                    value={firstName}
                                     label="First Name"
                                     type="text"
-                                    name="firstname"
+                                    name="firstName"
                                     className="form-control rounded-0"
                                     onChange={e => {
-                                        setName(e.target.value)
+                                        setFirstName(e.target.value)
                                     }}
                                 />
                             </div>
 
                             <div className="col-md-6">
                                 <Input
-                                    value={name}
+                                    value={lastName}
                                     label="Last Name"
                                     type="text"
-                                    name="lastname"
+                                    name="lastName"
                                     className="form-control rounded-0"
                                     onChange={e => {
-                                        setName(e.target.value)
+                                        setLastName(e.target.value)
                                     }}
                                 />
                             </div>
@@ -78,14 +93,14 @@ export default function TenantRegistration() {
                             </div>
                             <div className="col-md-6">
                                 <Input
-                                    value={password}
+                                    value={passwordConfirm}
                                     label="Confirm Password"
                                     type="password"
                                     placeholder="Enter Password again"
                                     name="passwordConfirm"
                                     className="form-control rounded-0"
                                     onChange={e => {
-                                        setPassword(e.target.value)
+                                        setPasswordConfirm(e.target.value)
                                     }}
                                 />
                             </div>
