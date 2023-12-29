@@ -5,17 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eaa007a2-04b0-4aa5-8644-54817f8cd940" name="Changes" comment="created Auth Page">
-      <change afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/components/Navbar.jsx" afterPathEscaped="$PROJECT_DIR$/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/.idea/workspace.xml" beforePathEscaped="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/.idea/workspace.xml" afterPathEscaped="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/package-lock.json" beforePathEscaped="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/package-lock.json" afterPathEscaped="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/package.json" beforePathEscaped="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/package.json" afterPathEscaped="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/App.js" beforePathEscaped="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/App.js" afterPathEscaped="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/index.js" beforePathEscaped="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/index.js" afterPathEscaped="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/Home.js" beforePathEscaped="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/Home.js" afterPathEscaped="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/Login.js" beforePathEscaped="$PROJECT_DIR$/src/pages/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/Login.js" afterPathEscaped="$PROJECT_DIR$/src/pages/auth/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/PropertyManagement.js" beforePathEscaped="$PROJECT_DIR$/src/pages/auth/PropertyManagement.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/PropertyManagement.js" afterPathEscaped="$PROJECT_DIR$/src/pages/auth/PropertyManagement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/TenantRegistration.js" beforePathEscaped="$PROJECT_DIR$/src/pages/auth/TenantRegistration.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/TenantRegistration.js" afterPathEscaped="$PROJECT_DIR$/src/pages/auth/TenantRegistration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/reportWebVitals.js" beforePathEscaped="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/reportWebVitals.js" afterPathEscaped="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/.gitignore" beforePathEscaped="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/.idea/credisys_frontend.iml" beforePathEscaped="$PROJECT_DIR$/.idea/credisys_frontend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/.idea/inspectionProfiles/Project_Default.xml" beforePathEscaped="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/.idea/modules.xml" beforePathEscaped="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/.idea/vcs.xml" beforePathEscaped="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/.idea/workspace.xml" beforePathEscaped="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/README.md" beforePathEscaped="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/package-lock.json" beforePathEscaped="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/package.json" beforePathEscaped="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/public/favicon.ico" beforePathEscaped="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/public/index.html" beforePathEscaped="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/public/logo192.png" beforePathEscaped="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/public/logo512.png" beforePathEscaped="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/public/manifest.json" beforePathEscaped="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/public/robots.txt" beforePathEscaped="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/App.js" beforePathEscaped="$PROJECT_DIR$/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/components/Button.jsx" beforePathEscaped="$PROJECT_DIR$/src/components/Button.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/components/Input.jsx" beforePathEscaped="$PROJECT_DIR$/src/components/Input.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/components/Navbar.jsx" beforePathEscaped="$PROJECT_DIR$/src/components/Navbar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/http-common.js" beforePathEscaped="$PROJECT_DIR$/src/http-common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/index.js" beforePathEscaped="$PROJECT_DIR$/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/Home.js" beforePathEscaped="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/Login.js" beforePathEscaped="$PROJECT_DIR$/src/pages/auth/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/PropertyManagement.js" beforePathEscaped="$PROJECT_DIR$/src/pages/auth/PropertyManagement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/TenantRegistration.js" beforePathEscaped="$PROJECT_DIR$/src/pages/auth/TenantRegistration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/reportWebVitals.js" beforePathEscaped="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/services/dataService.js" beforePathEscaped="$PROJECT_DIR$/src/services/dataService.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +113,7 @@
       <workItem from="1703320045603" duration="1615000" />
       <workItem from="1703322847156" duration="3492000" />
       <workItem from="1703400303852" duration="3773000" />
-      <workItem from="1703478064812" duration="20907000" />
+      <workItem from="1703478064812" duration="24825000" />
     </task>
     <task id="LOCAL-00001" summary="created Auth Page">
       <option name="closed" value="true" />

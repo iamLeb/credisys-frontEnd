@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Button from "../../components/Button";
 import {Link, useNavigate} from "react-router-dom";
 import Input from "../../components/Input";
@@ -11,6 +11,15 @@ export default function Login() {
 
     const navigate = useNavigate();
 
+    // Check authentication status when the component mounts
+    // Check authentication status when the component mounts
+    useEffect(() => {
+        axios.get('/check-session')
+            .then(res => {
+                console.log(res.data);
+            });
+    }, []);
+
     const handleForm = (e) => {
         e.preventDefault();
         try {
@@ -20,7 +29,10 @@ export default function Login() {
                     if (error) {
                         toast.error(error);
                     } else {
+                        // setEmail('');
+                        // setPassword('');
                         console.log(res)
+                        // navigate('/');
                     }
                 })
                 .catch(err => console.log(err));

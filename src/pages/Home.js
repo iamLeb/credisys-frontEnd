@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Link} from "react-router-dom";
 import Button from "../components/Button";
+import axios from "axios";
 
 function Home() {
     return (
@@ -8,8 +9,7 @@ function Home() {
 
             <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
                 <div className="bg-white p-3 rounded w-25">
-                    <h2>Welcome to Credisys</h2> <hr/>
-
+                    <h2 id='show'>Welcome to Credisys</h2> <hr/>
                     <div className="p-3">
                         Landlords and Property Managers incentivize on time payments with rent reporting
                         rewards, while Renters are empowered with credit building opportunities.
