@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eaa007a2-04b0-4aa5-8644-54817f8cd940" name="Changes" comment="created Auth Page">
-      <change afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/PropertyManagement.js" afterPathEscaped="$PROJECT_DIR$/src/pages/auth/PropertyManagement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/components/Navbar.jsx" afterPathEscaped="$PROJECT_DIR$/src/components/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/.idea/workspace.xml" beforePathEscaped="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/.idea/workspace.xml" afterPathEscaped="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/package-lock.json" beforePathEscaped="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/package-lock.json" afterPathEscaped="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/package.json" beforePathEscaped="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/package.json" afterPathEscaped="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/App.js" beforePathEscaped="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/App.js" afterPathEscaped="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/index.js" beforePathEscaped="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/index.js" afterPathEscaped="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/Home.js" beforePathEscaped="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/Home.js" afterPathEscaped="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/Login.js" beforePathEscaped="$PROJECT_DIR$/src/pages/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/Login.js" afterPathEscaped="$PROJECT_DIR$/src/pages/auth/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/Registration.js" beforePathEscaped="$PROJECT_DIR$/src/pages/auth/Registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/TenantRegistration.js" afterPathEscaped="$PROJECT_DIR$/src/pages/auth/TenantRegistration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/PropertyManagement.js" beforePathEscaped="$PROJECT_DIR$/src/pages/auth/PropertyManagement.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/PropertyManagement.js" afterPathEscaped="$PROJECT_DIR$/src/pages/auth/PropertyManagement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/TenantRegistration.js" beforePathEscaped="$PROJECT_DIR$/src/pages/auth/TenantRegistration.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/pages/auth/TenantRegistration.js" afterPathEscaped="$PROJECT_DIR$/src/pages/auth/TenantRegistration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/reportWebVitals.js" beforePathEscaped="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Canada /Coding/Projects/credisys_frontend/src/reportWebVitals.js" afterPathEscaped="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JSX File" />
         <option value="JavaScript File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
@@ -53,24 +59,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;auth&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/iamleblib/Documents/Canada 🇨🇦/Coding/Projects/credisys_frontend&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "auth",
+    "last_opened_file_path": "/Users/iamleblib/Documents/Canada 🇨🇦/Coding/Projects/credisys_frontend",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages/auth" />
@@ -90,7 +97,7 @@
       <workItem from="1703320045603" duration="1615000" />
       <workItem from="1703322847156" duration="3492000" />
       <workItem from="1703400303852" duration="3773000" />
-      <workItem from="1703478064812" duration="5714000" />
+      <workItem from="1703478064812" duration="20907000" />
     </task>
     <task id="LOCAL-00001" summary="created Auth Page">
       <option name="closed" value="true" />
