@@ -1,38 +1,32 @@
-import {useEffect, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import Button from "../../components/Button";
-import {Link, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import Input from "../../components/Input";
 import axios from "axios";
+import {UserContext} from "../../context/userContext";
 import toast from "react-hot-toast";
 
 export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
     const navigate = useNavigate();
+    const {user} = useContext(UserContext);
 
-    // Check authentication status when the component mounts
-    // Check authentication status when the component mounts
     useEffect(() => {
-        axios.get('/check-session')
-            .then(res => {
-                console.log(res.data);
-            });
+        if (user) navigate('/dashboard');
     }, []);
 
-    const handleForm = (e) => {
+    const handleForm = async (e) => {
         e.preventDefault();
         try {
-            axios.post('/api/login', {email, password})
+            await axios.post('/api/login', {email, password})
                 .then(res => {
                     const error = res.data.error;
                     if (error) {
                         toast.error(error);
                     } else {
-                        // setEmail('');
-                        // setPassword('');
-                        console.log(res)
-                        // navigate('/');
+                        toast.success("Logging user in!");
+                        navigate('/dashboard');
                     }
                 })
                 .catch(err => console.log(err));
@@ -72,18 +66,15 @@ export default function Login() {
                             }}
                         />
                         <Button text="Signup" color={'blue'}/>
-                        <p>Do not have an account? <br/>
-                            <div className="row">
+                            <div className="row mt-5">
                                 <div className="col-md-6">
-                                    <Link style={{textDecoration: "none"}} to={'/property-management/register'}>Property Manager</Link>
+                                    <p onClick={() => navigate('/register')}>Register</p>
                                 </div>
+
                                 <div className="col-md-6">
-                                    <Link style={{textDecoration: "none"}} to={'/tenant/register'}>Tenant</Link>
+                                    <p onClick={() => navigate('/')}>homePage</p>
                                 </div>
                             </div>
-                        </p>
-
-                        <p><Link style={{textDecoration: "none"}} to={'/'}>Go back to homePage</Link></p>
                     </form>
                 </div>
             </div>
