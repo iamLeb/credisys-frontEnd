@@ -1,8 +1,10 @@
-import React from 'react';
-import {Link} from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../components/Button";
+import { useUser } from "../utility/UserProvider";
 
 function Home() {
+
     return (
         <>
 
@@ -22,10 +24,18 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
 
-        </>
-    );
+            </div>
+            <div className="col-md-6">
+              <Link to={"/tenant/register"}>
+                <Button text={"Register"} color={"green"} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Home;
