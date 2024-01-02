@@ -9,7 +9,7 @@ import {UserContextProvider} from "./context/userContext";
 import Dashboard from "./pages/Admin/Dashboard";
 import Profile from "./pages/Admin/Profile";
 
-axios.defaults.baseURL = '//localhost:3000';
+axios.defaults.baseURL = '//127.0.0.1:3000';
 axios.defaults.withCredentials = true;
 function App() {
   return (

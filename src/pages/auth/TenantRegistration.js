@@ -1,109 +1,101 @@
-import { useState } from "react";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
-import {Link, useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
+import {useState} from "react";
 import axios from "axios";
-import toast from 'react-hot-toast';
-
+import toast from "react-hot-toast";
+import {useNavigate} from "react-router-dom";
 
 export default function TenantRegistration() {
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [passwordConfirm, setPasswordConfirm] = useState('');
-
     const navigate = useNavigate();
+    const [values, setValues] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+        passwordConfirm: ''
+    });
+    const onChange = e => {
+        setValues({...values, [e.target.name]: e.target.value});
+    }
 
-    const handleForm = async e => {
+    const inputs = [
+        {
+            id: 1,
+            name: 'firstName',
+            type: 'text',
+            placeholder: 'enter first name',
+            label: 'First Name',
+            errorMessage: 'First name should be between 3-16 character',
+            required: true,
+            pattern: '^[A-Za-z0-9]{3,16}$'
+        },
+        {
+            id: 2,
+            name: 'lastName',
+            type: 'text',
+            placeholder: 'enter last name',
+            label: 'Last Name',
+            errorMessage: 'Last name should be between 3-15 character',
+            required: true,
+            pattern: '^[A-Za-z0-9]{3,16}$'
+        },
+        {
+            id: 3,
+            name: 'email',
+            type: 'email',
+            placeholder: 'enter email',
+            label: 'E-mail',
+            errorMessage: 'Email must be valid',
+            required: true,
+        },
+        {
+            id: 4,
+            name: 'password',
+            type: 'password',
+            placeholder: 'enter password',
+            label: 'Password',
+            errorMessage: 'Password should be between 8-20 characters, include at least 1 letter, 1 Number, and 1 special case',
+            required: true,
+            // pattern: '^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$'
+        },
+        {
+            id: 5,
+            name: 'passwordConfirm',
+            type: 'password',
+            placeholder: 'enter password again',
+            label: 'Password Confirm',
+            errorMessage: 'Passwords don\'t match',
+            required: true,
+            pattern: values.password
+        }
+    ];
+    const handleForm = e => {
         e.preventDefault();
-        const datas = {firstName, lastName, email, password, passwordConfirm}
-
-        await axios.post('/api/tenant', datas)
-            .then(result => {
-                const error = result.data.error;
-                if (error) {
-                    toast.error(error);
+        // check if email already exist
+        axios.post('/api/tenant', values)
+            .then(res => {
+                console.log(res.data.error);
+                if (res.data.error) {
+                    toast.error(res.data.error);
                 } else {
-                    toast.success("Account created successfully!");
-                    navigate('/login');
+                    toast.success("Registration complete, logging in!");
+                    navigate('/dashboard');
                 }
             })
             .catch(err => console.log(err));
     }
+
     return (
         <>
             <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
-                <div className="bg-white p-3 rounded w-50">
+                <div className="bg-white p-3 rounded w-25">
                     <h2>Tenant Registration</h2>
                     <form onSubmit={handleForm}>
                         <div className="row">
-                            <div className="col-md-6">
-                                <Input
-                                    value={firstName}
-                                    label="First Name"
-                                    type="text"
-                                    name="firstName"
-                                    className="form-control rounded-0"
-                                    onChange={e => {
-                                        setFirstName(e.target.value)
-                                    }}
-                                />
-                            </div>
-
-                            <div className="col-md-6">
-                                <Input
-                                    value={lastName}
-                                    label="Last Name"
-                                    type="text"
-                                    name="lastName"
-                                    className="form-control rounded-0"
-                                    onChange={e => {
-                                        setLastName(e.target.value)
-                                    }}
-                                />
-                            </div>
-
-                            <div className="col-md-12">
-                                <Input
-                                    value={email}
-                                    label="Email"
-                                    type="text"
-                                    placeholder="Enter Email"
-                                    name="email"
-                                    className="form-control rounded-0"
-                                    onChange={e => {
-                                        setEmail(e.target.value)
-                                    }}
-                                />
-                            </div>
-
-                            <div className="col-md-6">
-                                <Input
-                                    value={password}
-                                    label="Password"
-                                    type="password"
-                                    placeholder="Enter Password"
-                                    name="password"
-                                    className="form-control rounded-0"
-                                    onChange={e => {
-                                        setPassword(e.target.value)
-                                    }}
-                                />
-                            </div>
-                            <div className="col-md-6">
-                                <Input
-                                    value={passwordConfirm}
-                                    label="Confirm Password"
-                                    type="password"
-                                    placeholder="Enter Password again"
-                                    name="passwordConfirm"
-                                    className="form-control rounded-0"
-                                    onChange={e => {
-                                        setPasswordConfirm(e.target.value)
-                                    }}
-                                />
-                            </div>
+                            {inputs.map((input) => (
+                                <Input key={input.id} {...input} value={values[input.name]} onChange={onChange}/>
+                            ))}
                         </div>
 
                         <Button text="Signup" color={'blue'}/>

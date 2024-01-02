@@ -1,15 +1,24 @@
-const Input = ({label, type, name, value, placeholder, className, onChange}) => {
+import {useState} from "react";
+
+const Input = (props) => {
+    const {label, errorMessage, onChange, id, ...inputProps} = props;
+    const [focused, setFocused] = useState(false);
+
+    const handleFocus = e => {
+        setFocused(true);
+    }
     return (
-        <div className="mb-3">
+        <div className="mb-3 col-md-12">
             <label><b>{label}</b></label>
             <input
-                type={type}
-                name={name}
-                value={value}
-                placeholder={placeholder}
+                {...inputProps}
                 onChange={onChange}
-                className={className}
+                className="form-control rounded-0"
+                onBlur={handleFocus}
+                onFocus={() => inputProps.name === "email" && setFocused(true)}
+                focused={focused.toString()}
             />
+            <span>{errorMessage}</span>
         </div>
     )
 };

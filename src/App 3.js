@@ -50,10 +50,6 @@ span {
     display: none;
 }
 
-input:invalid[focused='true'] ~ span {
+input:invalid ~ span {
     display: block;
-}
-
-input:invalid[focused='true'] {
-    border: 1px solid red;
 }

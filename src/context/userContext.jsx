@@ -17,7 +17,7 @@ export const UserContextProvider = ({children}) => {
                         if (data) {
                             setUser(data);
                         } else {
-                            if (currentUrl !== "/" && currentUrl !== "/register") { // allow home page
+                            if (currentUrl !== "/" && currentUrl !== "/register") { // allow pages
                                 navigate('/login');
                             }
                         }
@@ -25,6 +25,7 @@ export const UserContextProvider = ({children}) => {
             }
         }
         fetchUser();
+
 
     }, []);
     return (
