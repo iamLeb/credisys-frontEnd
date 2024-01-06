@@ -2,6 +2,7 @@
 export default {
   content: ["./src/**/*.{html,jsx}"],
   theme: {
+
     extend: {
       colors: {
         'regal-blue': '#243c5a',
@@ -24,6 +25,7 @@ export default {
 
 
     },
+
   },
   plugins: [],
 }
