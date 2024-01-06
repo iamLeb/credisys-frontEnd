@@ -11,27 +11,27 @@ import {motion} from "framer-motion"
 
 function ServiceCard(Props) {
 
- 
+
     return (
 
         <motion.div className="flex justify-center items-center flex-col  h-44"
-        whileHover={{
-            scale: 1.5,
-            
-          
+                    whileHover={{
+                        scale: 1.5,
 
-            transition: { duration: 0.7 },
-          }}
-          // Adjust the transition duration
-       
-          style={{
-            perspective: "1000px" // Define perspective for 3D effect
-          }}
+
+
+                        transition: { duration: 0.7 },
+                    }}
+            // Adjust the transition duration
+
+                    style={{
+                        perspective: "1000px" // Define perspective for 3D effect
+                    }}
         >
             <motion.img
                 src={Props.img.property}
 
-           
+
                 className=" max-w-20"
             />
             <Typography className=" text-blue-400" >

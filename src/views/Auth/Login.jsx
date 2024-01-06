@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Input from "../../components/Input";
+import Input from "../../components/Input.jsx";
 import axios from "axios";
-import { UserContext } from "../../context/userContext";
+import { UserContext } from "../../context/userContext.jsx";
 import toast from "react-hot-toast";
 
 export default function Login() {
