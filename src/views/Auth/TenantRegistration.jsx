@@ -1,6 +1,5 @@
-import Input from "../../components/Input";
-import { Link } from "react-router-dom";
-import { UserContext } from "../../context/userContext";
+import Input from "../../components/Input.jsx";
+import { UserContext } from "../../context/userContext.jsx";
 import React, { useState, useContext } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
