@@ -5,23 +5,22 @@ export const ourservices=[ {
     "heading":" We manage properties."
 
 
-}, 
-{
-    "img":{property},
-    "heading":" We manage properties."
+},
+    {
+        "img":{property},
+        "heading":" We manage properties."
 
 
-}, {
-    "img":{property},
-    "heading":" We manage properties."
+    }, {
+        "img":{property},
+        "heading":" We manage properties."
 
 
-}, {
-    "img":{property},
-    "heading":" We manage properties."
+    }, {
+        "img":{property},
+        "heading":" We manage properties."
 
 
-}, 
+    },
 
 ]
-

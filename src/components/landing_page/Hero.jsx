@@ -20,15 +20,15 @@ function Hero() {
 
                 </div>
 
-                
+
                 <div className='w-screen  flex justify-center flex-col items-center'>
 
 
-                <div>
-                    <img src={img} />
+                    <div>
+                        <img src={img} />
 
 
-                </div>
+                    </div>
 
                     <hr class="border border-blue-500 border-t-2 w-1/4 my-6" />
                     <Typography variant='h1' className=' text-primary'>
@@ -69,12 +69,12 @@ function Hero() {
 
 
 
-                            <div className='flex gap-11 flex-row w-full  mt-28 justify-center items-center  flex-wrap sm:flex-row'>  
+                            <div className='flex gap-11 flex-row w-full  mt-28 justify-center items-center  flex-wrap sm:flex-row'>
 
-                                            
+
                                 {ourservices.map((service) => {
-                                return <ServiceCard img={service.img} heading={service.heading} />
-                            })}
+                                    return <ServiceCard img={service.img} heading={service.heading} />
+                                })}
                             </div>
 
                         </div>
