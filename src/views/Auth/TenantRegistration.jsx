@@ -98,7 +98,7 @@ export default function TenantRegistration() {
                         alt="Your Company"
                     />
                     <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-                        Sign in to your account
+                        Register with Credisys
                     </h2>
                 </div>
 
@@ -112,11 +112,7 @@ export default function TenantRegistration() {
                                 onChange={onChange}
                             />
                         ))}
-                        <div className="text-sm float-end pb-2">
-                            <span onClick={() => navigate('reset-password')} className="font-semibold text-indigo-600 hover:text-indigo-500">
-                                Forgot password?
-                            </span>
-                        </div>
+
                         <div>
                             <button
                                 type="submit"
@@ -128,9 +124,9 @@ export default function TenantRegistration() {
                     </form>
 
                     <p className="mt-10 text-center text-sm text-gray-500">
-                        Not a member?{' '}
-                        <span onClick={() => navigate('/register')} className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
-                            Create an account
+                        Already a member?{' '}
+                        <span onClick={() => navigate('/login')} className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500 cursor-pointer">
+                            Login
                         </span>
                     </p>
                 </div>

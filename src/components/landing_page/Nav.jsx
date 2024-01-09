@@ -189,10 +189,9 @@ function NavList() {
             <Typography
 
                 as="a"
-                href="#"
                 variant="small"
                 color="blue-gray"
-                className="  text-xl font-medium"
+                className="cursor-pointer text-xl font-medium"
             >
 
                 <ListItem onClick={() => navigate('/login')} className="flex items-center gap-2 py-2 pr-4">
