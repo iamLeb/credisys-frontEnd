@@ -1,7 +1,8 @@
 import { Button, Typography } from "@material-tailwind/react";
 import { MotionConfig, motion } from "framer-motion";
 import React from "react";
-import img1 from "../../assets/section1-1.jpg";
+import img1 from "../../assets/section1-2.png";
+
 
 export default function Section1() {
   return (
@@ -15,7 +16,7 @@ export default function Section1() {
             
             <Typography className=" font-sans text-md opacity-60">Simplify</Typography>
             <div >
-              <Typography  className= " sm:text-2xl lg:text-5xl text-blue-500">
+              <Typography  className= " font-semibold sm:text-2xl lg:text-5xl text-blue-500">
                 Convenient Online Rent Payment for Renters
               </Typography>
             </div>
@@ -52,7 +53,7 @@ export default function Section1() {
           {/* Image container            */}
           <div className=" flex w-screen justify-center mt-7">
             <div >
-            <img  className=" w-[950px]  object-fill  h-3/2"src={img1} alt="Building"></img>
+            <img  className=" w-96  h-3/2"src={img1} alt="Building"></img>
             </div>
           </div>
         </div>
