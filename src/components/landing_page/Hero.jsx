@@ -6,6 +6,11 @@ import services from '../../assets/services.png'
 import { ourservices } from './data'
 import ServiceCard from './ServiceCard'
 import { Footer } from './Footer'
+import Section1 from './Section1'
+import Section2 from './Section2'
+import Testimonials from './Testimonials'
+import Section3 from './Section3'
+import Section4 from './Section4'
 
 
 function Hero() {
@@ -82,8 +87,15 @@ function Hero() {
 
 
                     </div>
+                    <Section1/>
+                    <Section2/>
 
+                    <Testimonials/>
+
+                    <Section3/>
+                    <Section4/>
                     <div>
+
 
                         <Footer/>
                     </div>
