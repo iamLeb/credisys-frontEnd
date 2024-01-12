@@ -1,65 +1,36 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
-import Input from "../../components/Input.jsx";
+import Input from "../../../components/Input.jsx";
 import axios from "axios";
-import { UserContext } from "../../context/userContext.jsx";
-import toast from "react-hot-toast";
 
-export default function Login() {
+export default function Reset() {
+
     const navigate = useNavigate();
-    const { user, setUser } = useContext(UserContext);
 
     const [values, setValues] = useState({
         email: "",
-        password: "",
     });
 
     const onChange = (e) => {
         setValues({ ...values, [e.target.name]: e.target.value });
     };
-
     const inputs = [
         {
             id: 1,
             name: "email",
             type: "email",
-            label: "Email address",
+            label: "Enter Your Email Address",
             errorMessage: "Email must be valid",
-            required: true,
-        },
-        {
-            id: 2,
-            name: "password",
-            type: "password",
-            label: "Password",
             required: true,
         }
     ];
 
-    const handleForm = async (e) => {
+    const handleForm = e => {
         e.preventDefault();
-        try {
-            await axios
-                .post("/api/login", { email: values.email, password: values.password })
-                .then((res) => {
-                    const error = res.data.error;
-                    if (error) {
-                        toast.error(error);
-                    } else {
-                        setUser(res.data);
-                        toast.success("Logging user in!");
-                        navigate("/dashboard");
-                    }
-                })
-                .catch((err) => console.log(err));
-        } catch (e) {
-            console.log(e);
-        }
-    };
-
-    useEffect(() => {
-        if (user) navigate('/dashboard')
-    }, []);
+        axios.post('/password/reset', {email: values.email})
+            .then(res => console.log(res))
+            .catch(err => console.log(err));
+    }
 
     return (
         <>
@@ -85,25 +56,21 @@ export default function Login() {
                                 onChange={onChange}
                             />
                         ))}
-                        <div className="text-sm float-end pb-2">
-                            <span onClick={() => navigate('/password/reset')} className="font-semibold text-indigo-600 hover:text-indigo-500 cursor-pointer">
-                                Forgot password?
-                            </span>
-                        </div>
+
                         <div>
                             <button
                                 type="submit"
                                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
-                                Sign in
+                                Reset Password
                             </button>
                         </div>
                     </form>
 
                     <p className="mt-10 text-center text-sm text-gray-500">
-                        Not a member?{' '}
+                        Go back to login page?{' '}
                         <span onClick={() => navigate('/register')} className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500 cursor-pointer">
-                            Create an account
+                            Confirm Email
                         </span>
                     </p>
                 </div>

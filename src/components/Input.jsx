@@ -8,20 +8,22 @@ const Input = (props) => {
         setFocused(true);
     }
     return (
-        <div className="form-floating mb-3">
-            <input
-                {...inputProps}
-                onChange={onChange}
-                className="form-control"
-                id="floatingInput"
-                onBlur={handleFocus}
-                onFocus={() => inputProps.name === "email" && setFocused(true)}
-                focused={focused.toString()}
-            />
-
-            <label htmlFor="floatingInput">{label}</label>
-
-            <span>{errorMessage}</span>
+        <div>
+            <div className="flex items-center justify-between">
+                <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                    {label}
+                </label>
+            </div>
+            <div className="mt-2">
+                <input
+                    {...inputProps}
+                    onChange={onChange}
+                    onBlur={handleFocus}
+                    onFocus={() => inputProps.name === "email" && setFocused(true)}
+                    focused={focused.toString()}
+                    className="block p-4 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+            </div>
         </div>
     )
 };

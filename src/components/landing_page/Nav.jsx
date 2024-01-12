@@ -1,4 +1,5 @@
 import React from "react";
+import {useNavigate} from "react-router-dom";
 import { motion } from "framer-motion"
 import {
     Navbar,
@@ -29,6 +30,8 @@ import {
     TagIcon,
     UserGroupIcon,
 } from "@heroicons/react/24/solid";
+
+
 
 const navListMenuItems = [
     {
@@ -79,6 +82,7 @@ const navListMenuItems = [
 ];
 
 function NavListMenu() {
+
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
     const renderItems = navListMenuItems.map(
@@ -156,6 +160,7 @@ function NavListMenu() {
 }
 
 function NavList() {
+    const navigate = useNavigate();
     return (
         <List className=" mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
             <Typography
@@ -184,13 +189,12 @@ function NavList() {
             <Typography
 
                 as="a"
-                href="#"
                 variant="small"
                 color="blue-gray"
-                className="  text-xl font-medium"
+                className="cursor-pointer text-xl font-medium"
             >
 
-                <ListItem className="flex items-center gap-2 py-2 pr-4">
+                <ListItem onClick={() => navigate('/login')} className="flex items-center gap-2 py-2 pr-4">
 
 
                     Log In
@@ -226,6 +230,7 @@ export default function Nav() {
         );
     }, []);
 
+    const navigate = useNavigate();
     return (
         <motion.div className="border-0  z-50 shadow-lg  mt-8 flex justify-center text-5xl
       h-55  w-full">
@@ -249,7 +254,7 @@ export default function Nav() {
                             <NavList />
                         </div>
                         <div className="gap-2 lg:flex">
-                            <Button variant="contained" className=" bg-slate-700 size-lg w-32 text-white font-bold  " >
+                            <Button onClick={() => navigate('/login')} variant="contained" className=" bg-slate-700 size-lg w-32 text-white font-bold  " >
                                 Log In / Signup
                             </Button>
 
