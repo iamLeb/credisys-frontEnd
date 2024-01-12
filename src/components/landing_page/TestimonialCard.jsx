@@ -5,7 +5,7 @@ import { Typography } from "@material-tailwind/react";
 
 const TestimonialCard = ({ name, testimonial , designation , rating , address}) => {
   return (
-    <div className=" pt-2 mt-4 rounded-none flex flex-col justify-start text-start items-start border-slate-500 border-2 w-[300px] h-40 shadow-md p-4">
+    <div className=" pt-2 mt-4 h-[300px] w-96 rounded-md flex flex-col justify-evenly text-start gap-3  items-start  opacity-85 text-[#fff] bg-blue-400 border-2 mb-5 shadow-md p-4">
       <div className="flex flex-row">
         <div>&#9733;</div>
         <div>&#9733;</div>
@@ -13,7 +13,7 @@ const TestimonialCard = ({ name, testimonial , designation , rating , address}) 
         <div>&#9733;</div>
         <div>&#9733;</div>
       </div>
-      <Typography className="text-gray-600 mt-2">{testimonial}</Typography>
+      <Typography className=" mt-2">{testimonial}</Typography>
 
       <div className="flex flex-row ">
         <img
@@ -21,7 +21,7 @@ const TestimonialCard = ({ name, testimonial , designation , rating , address}) 
           alt="avatar"
           class="relative inline-block h-12 w-12 !rounded-full object-cover object-center"
         />
-        <div className="flex ml-3 flex-col">
+        <div className="flex text-left ml-3 items-start flex-col">
           <div>
             <Typography>
               {name}

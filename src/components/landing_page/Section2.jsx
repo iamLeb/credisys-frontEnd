@@ -54,7 +54,7 @@ export function SectionComponent1(props) {
       }}
     
     
-    className="flex border m-2 pb-9 pl-7 justify-start items-center flex-col button  hover:shadow-lg hover:shadow-blue-500/50 hover:transition duration-500 ease-in-out  py-2 px-4 rounded">
+    className="flex border m-2 pb-9 pl-7 justify-start items-center flex-col button  hover:shadow-lg bg-gray-200 hover:shadow-blue-500/50 hover:transition duration-500 ease-in-out  py-2 px-4 rounded">
       <div className="p-3">
         <div className=" justify-center items-center pb-4 flex  flex-col">
           <img className=" w-10 h-8" src={props.img} />

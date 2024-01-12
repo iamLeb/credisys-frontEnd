@@ -4,7 +4,7 @@ import TestimonialCarousel from "./Testimonial_Carasoul";
 
 export default function Testimonials() {
   return (
-    <div className="flex flex-col w-screen h-40  my-36 justify-center items-center">
+    <div className="flex flex-col w-screen h-max   my-24 justify-center items-center">
       <div className=" text-center">
         <div className="flex flex-row justify-center">
           <Typography className="text-4xl text-blue-500 mb-5 ">H</Typography>
