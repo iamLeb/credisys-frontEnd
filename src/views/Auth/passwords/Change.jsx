@@ -1,11 +1,13 @@
 import Input from "../../../components/Input.jsx";
 import {useEffect, useState} from "react";
-import {useLocation, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 export default function Change() {
+    const navigate = useNavigate();
     const [values, setValues] = useState({
-        email: "",
         password: "",
     });
 
@@ -35,14 +37,22 @@ export default function Change() {
     const {token, email} = useParams();
 
     useEffect(() => {
-        // check if token matches
-        axios.post('/token/compare', {token, email})
-            .then(res => console.log(res))
-            .catch(err => console.log(err));
+        // allow user if token exist else redirect them to login page
+        axios.post('/token/check', {token})
+            .then(res  => {
+                if (!res.data) navigate('/login')
+            });
     }, []);
 
-    const handleForm = () => {
 
+    const handleForm = e => {
+        e.preventDefault();
+       // check if token is valid
+        axios.post('/token/check', {password: values.password, email, token})
+            .then(res => {
+                res.data && ((toast.success('Password Updated, Please Login...')) (navigate('/login')));
+            })
+            .catch(err => console.log(err)); // display error if any caught
     }
 
     return (

@@ -18,7 +18,7 @@ import Reset from "./views/Auth/passwords/Reset.jsx";
 import Change from "./views/Auth/passwords/Change.jsx";
 
 
-axios.defaults.baseURL = "http://localhost:3000/";
+axios.defaults.baseURL = "http://localhost:3000";
 axios.defaults.withCredentials = true;
 function App() {
   const [count, setCount] = useState(0)
