@@ -11,6 +11,7 @@ import Section2 from "./Section2";
 import Testimonials from "./Testimonials";
 import Section3 from "./Section3";
 import Section4 from "./Section4";
+import Section0 from "./Section0";
 
 function Hero() {
   return (
@@ -20,7 +21,7 @@ function Hero() {
           style={{ width: "700px" }}
           className="mt-3  mb-12 italic    text-xxl"
         >
-          <Typography>
+          <Typography variant="h1" className=" font-light"> 
             Smart Rentals, Smarter Lives: Pay Rent, Build Credit
           </Typography>
         </div>
@@ -36,9 +37,9 @@ function Hero() {
           </div>
 
           <hr class="border border-blue-500 border-t-2 w-1/4 my-6" />
-          <Typography variant="h1" className=" text-primary">
+          {/* <Typography variant="h1" className=" text-primary">
             It Starts with a great Plan
-          </Typography>
+          </Typography> */}
 
           <div className="mt-10">
             {/* <div className='max-w-lg  mt-20  bg-opacity-0 '>
@@ -84,6 +85,7 @@ function Hero() {
 
 
                     </div> */}
+          <Section0/>
           <Section1 />
           <Section2 />
 
