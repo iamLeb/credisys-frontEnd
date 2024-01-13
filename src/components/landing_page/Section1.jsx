@@ -7,14 +7,14 @@ import img1 from "../../assets/section1-2.png";
 export default function Section1() {
   return (
     <>
-      <div className=" w-screen flex   h-max  flex-col bg-gray-100 mt-6 p-6">
+      <div className=" w-screen flex   h-max  flex-col bg-gray-100 mt-2 p-6">
         <div className=" flex items-start justify-between flex-row h-64 ">
           {/* // left container  */}
 
         
           <div className="  text-left w-2/4 h-1/2 flex-col lg:pl-[300px] md:pl-[160px] justify-start  ">
             
-            <Typography className=" font-sans text-md opacity-60">Simplify</Typography>
+            <Typography className=" font-semibold text-md opacity-60">Simplify</Typography>
             <div >
               <Typography  className= " font-semibold sm:text-2xl lg:text-5xl text-blue-500">
                 Convenient Online Rent Payment for Renters
@@ -40,7 +40,7 @@ export default function Section1() {
 
               {/* // learn more + signup */}
               <div className="flex flex-row mt-4">
-                <Button variant="outlined" className=" w-1/4  h-[20px] rounded text-blue-500 hover:bg-blue-500 hover:text-white">
+                <Button variant="outlined" className=" w-1/4  h-max rounded text-blue-500 hover:bg-blue-500 hover:text-white">
                   {" "}
                   Learn More
                 </Button>

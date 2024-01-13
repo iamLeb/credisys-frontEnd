@@ -53,17 +53,8 @@ function GetInTouchForm() {
               className: "before:content-none after:content-none",
             }}
           />
-          <Typography variant="h6" color="blue-gray">
-            Password
-          </Typography>
-          <Input
-            type="password"
-            placeholder="********"
-            className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-            labelProps={{
-              className: "before:content-none after:content-none",
-            }}
-          />
+         
+          
         </div>
         <div class="flex flex-row items-center my-2 ">
           <Checkbox label="  I agree to terms " />
