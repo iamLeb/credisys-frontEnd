@@ -90,33 +90,47 @@ export default function TenantRegistration() {
 
     return (
         <>
-            <div className="container col-xl-10 col-xxl-8 px-4 py-5">
-                <div className="row align-items-center g-lg-5 py-5">
-                    <div className="col-md-10 mx-auto col-lg-12">
-                        <form onSubmit={handleForm} className="p-4 p-md-5 border rounded-3 bg-light">
-                            <h6 className="display-5 fw-bold lh-1 mb-3">Create Account</h6>
-                            {inputs.map((input) => (
-                                <Input
-                                    key={input.id}
-                                    {...input}
-                                    value={values[input.name]}
-                                    onChange={onChange}
-                                />
-                            ))}
-                            <div className="checkbox mb-3">
-                                <small className="text-muted" style={{cursor: "pointer"}} onClick={() => navigate('/login')}>Already have an account? Login</small>
-                            </div>
-                            <button className="w-100 btn btn-lg btn-primary" type="submit">Create New Account</button>
-                            <hr className="my-4"/>
-                            <button onClick={() => navigate('/')} type="button"
-                                    className="w-100 btn btn-outline-info btn-sm">Home page
+            <div className="200 min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+                <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+                    <img
+                        className="mx-auto h-10 w-auto"
+                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                        alt="Your Company"
+                    />
+                    <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+                        Register with Credisys
+                    </h2>
+                </div>
+
+                <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                    <form className="space-y-6" onSubmit={handleForm} method="POST">
+                        {inputs.map((input) => (
+                            <Input
+                                key={input.id}
+                                {...input}
+                                value={values[input.name]}
+                                onChange={onChange}
+                            />
+                        ))}
+
+                        <div>
+                            <button
+                                type="submit"
+                                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            >
+                                Create account
                             </button>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
+
+                    <p className="mt-10 text-center text-sm text-gray-500">
+                        Already a member?{' '}
+                        <span onClick={() => navigate('/login')} className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500 cursor-pointer">
+                            Login
+                        </span>
+                    </p>
                 </div>
             </div>
-
-            <div className="b-example-divider"></div>
         </>
     )
         ;
