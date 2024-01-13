@@ -23,29 +23,29 @@ axios.defaults.withCredentials = true;
 function App() {
   const [count, setCount] = useState(0)
   return (
-    <BrowserRouter>
-      <UserContextProvider>
-        <Toaster position={"bottom-right"} toastOptions={{ duration: 2000 }} />
-        <Routes>
-          {/*Front page Route*/}
-          {/*<Route path="/" element={<Layout />}>*/}
-            <Route index element={<Home />}/>
-            <Route path="/register" element={<TenantRegistration />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/password/reset" element={<Reset />} />
-            <Route path="/password/change/:token/:email" element={<Change />} />
-          {/*</Route>*/}
+      <BrowserRouter>
+          <UserContextProvider>
+              <Toaster position={"bottom-right"} toastOptions={{ duration: 2000 }} />
+              <Routes>
+                  {/*Front page Route*/}
+                  {/*<Route path="/" element={<Layout />}>*/}
+                  <Route index element={<Home />}/>
+                  <Route path="/register" element={<TenantRegistration />} />
+                  <Route path="/login" element={<Login />} />
+                  <Route path="/password/reset" element={<Reset />} />
+                  <Route path="/password/change/:token/:email" element={<Change />} />
+                  {/*</Route>*/}
 
-          {/*Auth Route*/}
-          <Route path="/" element={<TenantLayout />}>
-            <Route path="/dashboard" element={<Dashboard />}/>
-            <Route path="/profile" element={<Profile />} />
-          </Route>
-            <Route path="*" element={<PageNotFound />} />
+                  {/*Auth Route*/}
+                  <Route path="/" element={<TenantLayout />}>
+                      <Route path="/dashboard" element={<Dashboard />}/>
+                      <Route path="/profile" element={<Profile />} />
+                  </Route>
+                  <Route path="*" element={<PageNotFound />} />
 
-        </Routes>
-      </UserContextProvider>
-    </BrowserRouter>
+              </Routes>
+          </UserContextProvider>
+      </BrowserRouter>
   )
 
 
