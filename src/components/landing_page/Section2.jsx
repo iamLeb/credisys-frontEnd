@@ -7,16 +7,16 @@ import { motion } from "framer-motion";
 
 export default function Section2() {
   return (
-    <div className=" w-screen flex mt-14 justify-center">
+    <div className=" w-screen font-mono text-black flex mt-14 justify-center">
       <div className=" w-screen h-max flex flex-row justify-center items-center">
         {/* 1st container  */}
         <div className=" flex flex-col justify-center items-center">
           <div className=" w-3/2 p-10 text-left">
-            <Typography variant="h1" className=" font-semibold  text-left">
+            <Typography  className="sm:text-2xl md:text-3xl font-mono  text-left">
               Efficient Rent Collection and Property Management for Renters and
               Landlords
             </Typography>
-            <Typography variant="h7" className=" text-left mt-5 opacity-80">
+            <Typography className=" font-medium text-left mt-5 opacity-80">
               Our platform offers a seamless solution for renters and landlords
               to manage rent collection and property management efficiently.
             </Typography>
@@ -59,11 +59,11 @@ export function SectionComponent1(props) {
         <div className=" justify-center items-center pb-4 flex  flex-col">
           <img className=" w-10 h-8" src={props.img} />
 
-          <Typography className="text-1xl text-left">
+          <Typography className="text-1xl font-medium  text-left">
             {props.heading}
           </Typography>
         </div>
-        <Typography className="text-1xl text-left opacity-75">
+        <Typography className="text-1xl font-normal  text-left opacity-75">
           {props.description}
         </Typography>
       </div>

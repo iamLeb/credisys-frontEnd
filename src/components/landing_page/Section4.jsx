@@ -5,18 +5,18 @@ import { Form } from "react-router-dom";
 
 export default function Section4() {
   return (
-    <div className=" w-screen flex justify-evenly mt-36 items-start ">
+    <div className=" w-screen text-black flex justify-evenly mt-36 items-start ">
       <div className="flex flex-row items-start">
         {/* image container */}
 
         <img src={img1} className=" w-1/2 mx-12  " />
 
         <div className="flex w-1/2 max-w-1/2 flex-col justify-center  items-start  text-left">
-          <Typography className="text-sm">Connect</Typography>
-          <Typography className=" py-3 text-4xl font-semibold">
+          <Typography className="text-sm font-normal " >Connect</Typography>
+          <Typography className=" py-3  font-normal text-4xl ">
             Get in Touch
           </Typography>
-          <Typography className="pt-6 text-1xl">
+          <Typography className="pt-6 font-normal text-1xl">
             Have questions or need support? Contact us now.
           </Typography>
           <GetInTouchForm />
