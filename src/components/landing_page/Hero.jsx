@@ -19,9 +19,9 @@ function Hero() {
       <div className="flex   align-middle flex-col  items-center">
         <div
           style={{ width: "700px" }}
-          className="mt-3  mb-12 italic    text-xxl"
+          className="mt-3  mb-12   "
         >
-          <Typography variant="h1" className=" font-light"> 
+          <Typography  className="text-5xl font-mono"> 
             Smart Rentals, Smarter Lives: Pay Rent, Build Credit
           </Typography>
         </div>
