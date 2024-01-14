@@ -16,6 +16,7 @@ import TenantLayout from "./views/layouts/TenanatLayout.jsx";
 import PageNotFound from "./views/PageNotFound.jsx";
 import Reset from "./views/Auth/passwords/Reset.jsx";
 import Change from "./views/Auth/passwords/Change.jsx";
+import Blog from "./views/front/blog/Blog.jsx";
 
 
 axios.defaults.baseURL = "http://localhost:3000";
@@ -30,6 +31,7 @@ function App() {
                   {/*Front page Route*/}
                   {/*<Route path="/" element={<Layout />}>*/}
                   <Route index element={<Home />}/>
+                  <Route path="/blog" element={<Blog />}/>
                   <Route path="/register" element={<TenantRegistration />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/password/reset" element={<Reset />} />

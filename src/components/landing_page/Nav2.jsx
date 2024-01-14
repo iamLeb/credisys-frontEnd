@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import {useNavigate} from "react-router-dom";
 
 export default function Nav2() {
+  const navigate = useNavigate();
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -10,8 +12,8 @@ export default function Nav2() {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900 text-lg">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#">
-          <span className="self-center text-2xl text-blue-500 font-semibold whitespace-nowrap">
+        <a onClick={() => navigate('/')}>
+          <span className="cursor-pointer self-center text-2xl text-blue-500 font-semibold whitespace-nowrap">
             Credsys
           </span>
         </a>
@@ -67,7 +69,7 @@ export default function Nav2() {
             </li>
             <li>
               <a
-                href="#"
+                onClick={() => navigate('/tenant')}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Tenants
@@ -83,8 +85,8 @@ export default function Nav2() {
             </li>
             <li>
               <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                onClick={() => navigate('/blog')}
+                className="cursor-pointer block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Blog
               </a>
@@ -99,8 +101,9 @@ export default function Nav2() {
             </li>
             <li>
               <button
+                  onClick={() => navigate('/login')}
                 type="button"
-                class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 sm:bg-white dark:hover:text-white dark:hover:bg-gray-700"
+                className="cursor-pointer py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-red rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 sm:bg-white dark:hover:text-white dark:hover:bg-gray-700"
               >
                 Log In
               </button>
@@ -109,9 +112,9 @@ export default function Nav2() {
             <li>
               <button
                 type="button"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
               >
-                SignUP
+                Sign up
               </button>
             </li>
           </ul>
