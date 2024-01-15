@@ -9,23 +9,23 @@ import img5 from "../../assets/Section0_5.jpg";
 export default function Section0() {
   return (
     <div className=" flex flex-col">
-      <section class="bg-white dark:bg-gray-900">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
-          <h1 class="mb-4 text-5xl font-extrabold tracking-tight leading-none font-mono text-gray-900 md:text-5xl lg:text-4xl dark:text-white">
+      <section className="bg-white dark:bg-gray-900">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+          <h1 className="mb-4 text-5xl font-extrabold tracking-tight leading-none font-mono text-gray-900 md:text-5xl lg:text-4xl dark:text-white">
             We invest in the world’s potential
           </h1>
-          <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
+          <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
             Here at Flowbite we focus on markets where technology, innovation,
             and capital can unlock long-term value and drive economic growth.
           </p>
-          <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+          <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <a
               href="#"
-              class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+              className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
               Get started
               <svg
-                class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -33,16 +33,16 @@ export default function Section0() {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
             </a>
             <a
               href="#"
-              class="inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+              className="inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
             >
               Learn more
             </a>
@@ -77,14 +77,14 @@ export function Section_Card_1(props) {
         <img className=" max-h-[250px] object-contain bg-cover bg-center" src={props.img} />
       </section>
       <section className=" p-10 text-left  w-1/3 flex flex-col">
-        <div class="mb-3 font-mono text-black md:text-3xl dark:text-gray-400">
+        <div className="mb-3 font-mono text-black md:text-3xl dark:text-gray-400">
           
             {props.heading}
        
         </div>
 
         <div>
-          <p class="text-gray-500 dark:text-gray-400">{props.description}</p>
+          <p className="text-gray-500 dark:text-gray-400">{props.description}</p>
         </div>
       </section>
     </div>
@@ -96,13 +96,13 @@ export function Section_Card_2(props) {
     <div className=" w-full m-4 mb-0 h-max flex justify-center items-center flex-row">
       <section className=" p-10 text-left w-1/3 flex flex-col">
         <div>
-          <p class="mb-3 font-mono text-black md:text-3xl dark:text-gray-400">
+          <p className="mb-3 font-mono text-black md:text-3xl dark:text-gray-400">
             {props.heading}
           </p>
         </div>
 
         <div>
-          <p class="text-gray-500 dark:text-gray-400">{props.description}</p>
+          <p className="text-gray-500 dark:text-gray-400">{props.description}</p>
         </div>
       </section>
       <section className="flex  object-scale-down justify-center w-1/3">

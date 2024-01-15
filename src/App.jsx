@@ -17,6 +17,7 @@ import PageNotFound from "./views/PageNotFound.jsx";
 import Reset from "./views/Auth/passwords/Reset.jsx";
 import Change from "./views/Auth/passwords/Change.jsx";
 import Blog from "./views/front/blog/Blog.jsx";
+import Tenant from "./views/front/tenant/Tenant.jsx";
 
 
 axios.defaults.baseURL = "http://localhost:3000";
@@ -32,6 +33,7 @@ function App() {
                   {/*<Route path="/" element={<Layout />}>*/}
                   <Route index element={<Home />}/>
                   <Route path="/blog" element={<Blog />}/>
+                  <Route path="/tenant" element={<Tenant />}/>
                   <Route path="/register" element={<TenantRegistration />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/password/reset" element={<Reset />} />
