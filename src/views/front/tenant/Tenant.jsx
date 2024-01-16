@@ -14,7 +14,7 @@ const Tenant = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
         <>
-            <Nav2/>
+        
             <section className="container mx-auto flex justify-between align-items-center p-5">
                 {/*Left side with register buttons */}
                 <div className="w-2/4 my-auto">

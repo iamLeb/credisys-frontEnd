@@ -11,7 +11,7 @@ import Faq from "./container/Faq.jsx";
 const Blog = () => {
     return (
         <>
-            <Nav2/>
+        
             <Hero/>
             <Articles/>
             <Banner />

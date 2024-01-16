@@ -18,6 +18,7 @@ import Reset from "./views/Auth/passwords/Reset.jsx";
 import Change from "./views/Auth/passwords/Change.jsx";
 import Blog from "./views/front/blog/Blog.jsx";
 import Tenant from "./views/front/tenant/Tenant.jsx";
+import Nav2 from './components/landing_page/Nav2.jsx';
 
 
 axios.defaults.baseURL = "http://localhost:3000";
@@ -28,6 +29,7 @@ function App() {
       <BrowserRouter>
           <UserContextProvider>
               <Toaster position={"bottom-right"} toastOptions={{ duration: 2000 }} />
+              <Nav2/>
               <Routes>
                   {/*Front page Route*/}
                   {/*<Route path="/" element={<Layout />}>*/}

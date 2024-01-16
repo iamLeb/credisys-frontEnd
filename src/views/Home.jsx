@@ -8,8 +8,7 @@ import Nav2 from '../components/landing_page/Nav2'
 function Home() {
     return (
         <>
-            {/* <Nav /> */}
-            <Nav2/>
+           
             <Hero />
         </>
     )
