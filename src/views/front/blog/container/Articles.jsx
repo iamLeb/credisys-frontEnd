@@ -2,8 +2,6 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
 import ArticleCard from "../components/ArticleCard.jsx";
-import { useQuery } from "@tanstack/react-query";
-import { toast } from "react-hot-toast";
 import ArticleCardSkeleton from "../components/ArticleCardSkeleton.jsx";
 
 const Articles = () => {

@@ -36,7 +36,7 @@ function Hero() {
             <img src={img} />
           </div>
 
-          <hr class="border border-blue-500 border-t-2 w-1/4 my-6" />
+          <hr className="border border-blue-500 border-t-2 w-1/4 my-6" />
           {/* <Typography variant="h1" className=" text-primary">
             It Starts with a great Plan
           </Typography> */}
