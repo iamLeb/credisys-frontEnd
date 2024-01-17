@@ -48,10 +48,10 @@ function App() {
                   {/*</Route>*/}
 
                   {/*Auth Route*/}
-                  <Route path="/" element={<TenantLayout />}>
+                  {/*<Route path="/" element={<TenantLayout />}>*/}
                       <Route path="/dashboard" element={<Dashboard />}/>
                       <Route path="/profile" element={<Profile />} />
-                  </Route>
+                  {/*</Route>*/}
                   <Route path="*" element={<PageNotFound />} />
 
               </Routes>
