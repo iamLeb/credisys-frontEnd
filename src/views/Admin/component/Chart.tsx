@@ -62,5 +62,5 @@ const dataset = {
 };
 
 export default function App() {
-    // return <Line options={options} data={dataset} />;
+     return <Line data={dataset} />;
 }
