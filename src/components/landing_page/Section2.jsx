@@ -37,7 +37,7 @@ export default function Section2() {
         </div>
         {/* 
             2nd container */}
-        <div className="   flex flex-col justify-center">
+        <div className="   flex flex-col justify-center p-7">
           <img src={img3} />
         </div>
       </div>
