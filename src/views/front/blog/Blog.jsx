@@ -16,7 +16,7 @@ const Blog = () => {
             <Articles/>
             <Banner />
             <Faq />
-            <CTA/>
+            {/* <CTA/> */}
         </>
     );
 };
