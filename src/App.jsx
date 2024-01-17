@@ -18,6 +18,9 @@ import Reset from "./views/Auth/passwords/Reset.jsx";
 import Change from "./views/Auth/passwords/Change.jsx";
 import Blog from "./views/front/blog/Blog.jsx";
 import Tenant from "./views/front/tenant/Tenant.jsx";
+import Nav2 from './components/landing_page/Nav2.jsx';
+import Landlord from './views/front/landlord/Landlord.jsx';
+import { Footer } from './components/landing_page/Footer.jsx';
 
 
 axios.defaults.baseURL = "http://localhost:3000";
@@ -28,12 +31,16 @@ function App() {
       <BrowserRouter>
           <UserContextProvider>
               <Toaster position={"bottom-right"} toastOptions={{ duration: 2000 }} />
+              <Nav2/>
               <Routes>
                   {/*Front page Route*/}
                   {/*<Route path="/" element={<Layout />}>*/}
                   <Route index element={<Home />}/>
                   <Route path="/blog" element={<Blog />}/>
+                  <Route path="/AboutUS" element={<Home />}/>
                   <Route path="/tenant" element={<Tenant />}/>
+                  <Route path="/Landlord-PropertyManager" element={<Landlord />}/>
+
                   <Route path="/register" element={<TenantRegistration />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/password/reset" element={<Reset />} />
@@ -48,6 +55,7 @@ function App() {
                   <Route path="*" element={<PageNotFound />} />
 
               </Routes>
+              <Footer/>
           </UserContextProvider>
       </BrowserRouter>
   )
