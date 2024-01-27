@@ -15,11 +15,11 @@ import Section0 from "./Section0";
 
 function Hero() {
   return (
-    <div className="flex  justify-center  items-center mt-10">
+    <div className="flex  justify-center  items-center mt-10">q
       <div className="flex   align-middle flex-col  items-center">
         <div
           style={{ width: "700px" }}
-          className="mt-3  mb-12   "
+          className="mt-3  mb-12"
         >
           <Typography  className="text-5xl font-mono"> 
             Smart Rentals, Smarter Lives: Pay Rent, Build Credit
@@ -36,7 +36,7 @@ function Hero() {
             <img src={img} />
           </div>
 
-          <hr className="border border-blue-500 border-t-2 w-1/4 my-6" />
+          <hr class="border border-blue-500 border-t-2 w-1/4 my-6" />
           {/* <Typography variant="h1" className=" text-primary">
             It Starts with a great Plan
           </Typography> */}
@@ -94,7 +94,7 @@ function Hero() {
           <Section3 />
           <Section4 />
           <div>
-            <Footer />
+          
           </div>
         </div>
       </div>
